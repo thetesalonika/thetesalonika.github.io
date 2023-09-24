@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>E-Groceries</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="tempat-judul">
+            <span id="judul">moqups</span>
+          </div>
+
+          <div class="tempat-tombol">
+            <a href="#judul"
+              ><button class="tombol-navbar" id="tombol-home">Home</button></a
+            >
+            <a href="#section-our-package">
+              <button class="tombol-navbar" id="tombol-package">
+                Our Package
+              </button>
+            </a>
+
+            <a href="#closing">
+              <button class="tombol-navbar" id="tombol-call">Call Us</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <section id="headertitle">
+        <h1 id="title">Top Rated E-Groceries Shop in Indonesia</h1>
+        <span id="subtitle">Every Day with best ingredients</span>
+      </section>
+    </header>
+    <main>
+      <section id="callUs">
+        <article id="article">
+          <img
+            class="ukuran-gambar"
+            src="img/gambar1.jpg"
+            onload="getDimensions(this)"
+          />
+          <br />
+          <span class="quotes">
+            "setiap hari beli sayur buah yang fresh disini"
+          </span>
+
+          <div class="tempat-komentator">
+            <div class="komentator">
+              <span id="logo"><i class="bx bx-user"></i></span>
+              <div class="sub-text">
+                <span class="nama-komentator">Florance Hughens</span>
+                <span class="pekerjaan-umur">Ibu Rumah Tangga, 28</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="garis"></div>
+
+          <div class="tempat-information">
+            <div class="information">
+              <h3>
+                Use this space to provide users with more information about your
+                offer. Consider it a follow-up to your headline and explain the
+                benefits of your service or product
+              </h3>
+
+              <div class="fitur">
+                <div id="number">
+                  <span id="text-number">1</span>
+                </div>
+                <div class="text">
+                  Your first feature, written in the form of a benefit statement
+                </div>
+              </div>
+
+              <div class="fitur">
+                <div id="number">
+                  <span id="text-number">2</span>
+                </div>
+                <div class="text">
+                  Your second feature, written in the form of a benefit
+                  statement
+                </div>
+              </div>
+
+              <div class="fitur">
+                <div id="number">
+                  <span id="text-number">3</span>
+                </div>
+                <div class="text">
+                  Your third feature written, in the form of a benefit statement
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="form">
+          <div class="sub-form">
+            <div class="textform">
+              <h3 id="judul-form">Contact Us</h3>
+
+              <div class="sub-teks-form">
+                Sales akan menghubungi anda 1x24 jam setelah data kami terima.
+              </div>
+            </div>
+
+            <div class="formulir-data">
+              <form>
+                <div class="tempat-formulir">
+                  <label class="labelku" for="name">Your Name: </label>
+                  <input
+                    class="ukuran-kotak"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="First and last name"
+                    required
+                  />
+
+                  <label class="labelku" for="date">Email Address: </label>
+                  <input
+                    class="ukuran-kotak"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    required
+                  />
+
+                  <label class="labelku" for="Gender"
+                    >What are you interested ini?</label
+                  >
+                  <select id="option">
+                    <option class="pilihan">Select option</option>
+                    <option class="pilihan">Fruit</option>
+                    <option class="pilihan">Vegetable</option>
+                    <option class="pilihan">Food</option>
+                  </select>
+
+                  <button
+                    class="tombolsend"
+                    tyoe="button"
+                    onclick="doSomething();"
+                  >
+                    SEND
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="space">
+        <div class="text-space" id="section-our-package">Our Package</div>
+      </div>
+
+      <div class="tempat-packages">
+        <div class="packages">
+          <div class="package">
+            <div class="package-header">
+              <div id="number">
+                <span id="package-number"><i class="bx bx-bulb"></i></span>
+              </div>
+              <div class="text-package-judul">Fresh Vegetable</div>
+            </div>
+
+            <div class="package-content">
+              Sayuran segar langsung dari sumber pertanian terbaik
+            </div>
+          </div>
+
+          <div class="package">
+            <div class="package-header">
+              <div id="number">
+                <span id="package-number"><i class="bx bx-bulb"></i></span>
+              </div>
+              <div class="text-package-judul">Fresh Fruit</div>
+            </div>
+
+            <div class="package-content">
+              <p>
+                Buah dengan kualitas terbaik dari local atau import dan harga yang menarik
+              </p>
+            </div>
+          </div>
+
+          <div class="package">
+            <div class="package-header">
+              <div id="number">
+                <span id="package-number"><i class="bx bx-bulb"></i></span>
+              </div>
+              <div class="text-package-judul">Instant Delivery</div>
+            </div>
+
+            <div class="package-content">
+              <p>
+                Di kirim instan oleh kurir yang telah di training dengan SOP 
+                untuk menjaga kondisi belanja kamu
+              </p>
+            </div>
+          </div>
+
+          <div class="garis-baru">
+            <div class="garis-2"></div>
+          </div>
+          
+
+          <div class="package">
+            <div class="package-header">
+              <div id="number">
+                <span id="package-number"><i class="bx bx-bulb"></i></span>
+              </div>
+              <div class="text-package-judul">Kitchen Ingredient</div>
+            </div>
+
+            <div class="package-content">
+              <p>
+                Bumbu dapur lengkap untuk keperluan memasak kamu
+              </p>
+            </div>
+          </div>
+
+
+          <div class="package">
+            <div class="package-header">
+              <div id="number">
+                <span id="package-number"><i class="bx bx-bulb"></i></span>
+              </div>
+              <div class="text-package-judul">Kitchen Set</div>
+            </div>
+
+            <div class="package-content">
+              <p>
+               Segala jenis  alat masak untuk membantu kamu memasak
+              </p>
+            </div>
+          </div>
+
+          <div class="package">
+            <div class="package-header">
+              <div id="number">
+                <span id="package-number"><i class="bx bx-bulb"></i></span>
+              </div>
+              <div class="text-package-judul">Bundling Set</div>
+            </div>
+
+            <div class="package-content">
+              <p>
+                Bingung masak apa?
+                sudah tersedia paket untuk kamu masak di dapur mu
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="closing-argument-container">
+        <h1 id="closing">Your Closing Argument Headline</h1>
+        <div class="closing-argument-text-container">
+          <p>
+            Suspendisse egestas rhoncus urna in bibendum.
+            Donuc urna neque, euismod sed justo quis, convallis tincidunt risus.
+            Phasellus fringilla odio vel erat fringilla
+          </p>
+        </div>
+
+        <button class="tombol-call-to-action">CALL TO ACTION</button>
+      </div>
+
+      <div class="closing-container">
+        <span class="closing-judul">moqups</span>
+        <div class="subtext-pertama">
+          <span class="terms-of-service">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Terms of Service
+            </a>
+          </span>
+          <span class="privacy-policy">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>
+          </span>
+        </div>
+        <div class="subtext-kedua">
+          <span class="terms-of-service">
+            <a href="#" target="_blank" rel="noopener noreferrer"> @2019 </a>
+          </span>
+          <span class="privacy-policy">
+            <a href="#" target="_blank" rel="noopener noreferrer"> @moqups </a>
+          </span>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
